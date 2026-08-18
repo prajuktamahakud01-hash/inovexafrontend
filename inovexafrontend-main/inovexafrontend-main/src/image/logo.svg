@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 300" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Soft 3D Ribbon Drop Shadow -->
+    <filter id="ribbonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <!-- Vibrant Gradients for tactile depth -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8" />
+      <stop offset="100%" stop-color="#1359BA" />
+    </linearGradient>
+
+    <linearGradient id="gradYellow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9AB00" />
+      <stop offset="100%" stop-color="#E37400" />
+    </linearGradient>
+
+    <linearGradient id="gradGreen" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E8E3E" />
+      <stop offset="100%" stop-color="#106F2E" />
+    </linearGradient>
+
+    <linearGradient id="gradRed" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA4335" />
+      <stop offset="100%" stop-color="#B81D1A" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Interlocking 4-Color Knot Emblem -->
+  <g id="emblem" transform="translate(30, 20)">
+    <!-- Red ribbon (bottom-left) -->
+    <path d="M 25,265 L 25,160 L 68,160 L 68,222 L 130,222 L 130,265 Z" fill="url(#gradRed)" />
+    <path d="M 68,222 L 192,98 L 234,140 L 110,264 Z" fill="url(#gradRed)" filter="url(#ribbonGlow)" />
+
+    <!-- Green ribbon (bottom-right) -->
+    <path d="M 265,265 L 160,265 L 160,222 L 222,222 L 222,160 L 265,160 Z" fill="url(#gradGreen)" />
+    <path d="M 222,222 L 98,98 L 140,56 L 264,180 Z" fill="url(#gradGreen)" filter="url(#ribbonGlow)" />
+
+    <!-- Yellow ribbon (top-right) -->
+    <path d="M 265,25 L 265,130 L 222,130 L 222,68 L 160,68 L 160,25 Z" fill="url(#gradYellow)" />
+    <path d="M 222,68 L 98,192 L 56,150 L 180,26 Z" fill="url(#gradYellow)" filter="url(#ribbonGlow)" />
+
+    <!-- Blue ribbon (top-left) -->
+    <path d="M 25,25 L 130,25 L 130,68 L 68,68 L 68,130 L 25,130 Z" fill="url(#gradBlue)" />
+    <path d="M 68,68 L 192,192 L 150,234 L 26,110 Z" fill="url(#gradBlue)" filter="url(#ribbonGlow)" />
+  </g>
+
+  <!-- 2. Wordmark: INOVEXA -->
+  <g id="wordmark" transform="translate(360, 32)">
+    <!-- Letter I (Blue) -->
+    <rect x="0" y="15" width="26" height="135" rx="4" fill="url(#gradBlue)" />
+
+    <!-- Letter N (Blue) -->
+    <path d="M 62,15 L 90,15 L 152,112 L 152,15 L 178,15 L 178,150 L 150,150 L 88,53 L 88,150 L 62,150 Z" fill="url(#gradBlue)" />
+
+    <!-- Letter O (Red Ring) -->
+    <path fill-rule="evenodd" d="M 276,15 A 68 68 0 1 0 276,151 A 68 68 0 1 0 276,15 Z M 276,42 A 41 41 0 1 1 276,124 A 41 41 0 1 1 276,42 Z" fill="url(#gradRed)" />
+
+    <!-- Letter V (Red) -->
+    <path d="M 378,15 L 407,15 L 447,118 L 487,15 L 516,15 L 461,150 L 433,150 Z" fill="url(#gradRed)" />
+
+    <!-- Letter E (Blue 3 horizontal bars) -->
+    <g transform="translate(545, 15)">
+      <rect x="0" y="0" width="106" height="26" rx="4" fill="url(#gradBlue)" />
+      <rect x="0" y="55" width="106" height="26" rx="4" fill="url(#gradBlue)" />
+      <rect x="0" y="109" width="106" height="26" rx="4" fill="url(#gradBlue)" />
+    </g>
+
+    <!-- Letter X (Yellow) -->
+    <path d="M 685,15 L 717,15 L 753,74 L 789,15 L 821,15 L 770,82.5 L 823,150 L 791,150 L 753,91 L 715,150 L 683,150 L 736,82.5 Z" fill="url(#gradYellow)" />
+
+    <!-- Letter A (Green Chevron + Blue Triangle) -->
+    <g transform="translate(850, 15)">
+      <!-- Green Chevron -->
+      <path d="M 68,0 L 136,135 L 106,135 L 68,60 L 30,135 L 0,135 Z" fill="url(#gradGreen)" />
+      <!-- Blue Inner Triangle -->
+      <polygon points="68,75 92,135 44,135" fill="url(#gradBlue)" />
+    </g>
+
+    <!-- Subtitle / Tagline: INNOVATE. BUILD. EXCEL. -->
+    <text x="2" y="200" fill="#FFFFFF" font-family="'Manrope', 'Inter', -apple-system, sans-serif" font-size="30" font-weight="800" letter-spacing="14.8">INNOVATE. BUILD. EXCEL.</text>
+  </g>
+</svg>

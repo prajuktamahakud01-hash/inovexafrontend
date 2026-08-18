@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%" fill="none">
+  <!-- Apache Text -->
+  <text
+    x="8"
+    y="62"
+    fill="#0C4573"
+    font-size="34"
+    font-weight="700"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    letter-spacing="-0.02em"
+  >
+    Apache
+  </text>
+  
+  <!-- HOP Monogram: Left 'H' leg -->
+  <path
+    d="M 124 35 V 77"
+    stroke="#0C4573"
+    stroke-width="7.5"
+    stroke-linecap="round"
+  />
+  <!-- H Crossbar -->
+  <path
+    d="M 124 56 H 142"
+    stroke="#0C4573"
+    stroke-width="7.5"
+    stroke-linecap="round"
+  />
+  <!-- Arrowhead (Hop Upward Movement) -->
+  <polygon
+    points="142,9 153,27 131,27"
+    fill="#0C4573"
+  />
+  <!-- Arrow Shaft -> 'O' Loop Base -> 'P' Vertical Stem -->
+  <path
+    d="M 142 25 V 63 C 142 79 164 79 164 63 V 35"
+    stroke="#0C4573"
+    stroke-width="7.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- 'P' Loop -->
+  <path
+    d="M 164 35 C 184 35 184 56 164 56"
+    stroke="#0C4573"
+    stroke-width="7.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

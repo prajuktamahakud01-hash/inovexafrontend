@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 15 260 260" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Soft 3D Ribbon Drop Shadow -->
+    <filter id="ribbonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <!-- Vibrant Gradients for tactile depth -->
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A73E8" />
+      <stop offset="100%" stop-color="#1359BA" />
+    </linearGradient>
+
+    <linearGradient id="gradYellow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9AB00" />
+      <stop offset="100%" stop-color="#E37400" />
+    </linearGradient>
+
+    <linearGradient id="gradGreen" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E8E3E" />
+      <stop offset="100%" stop-color="#106F2E" />
+    </linearGradient>
+
+    <linearGradient id="gradRed" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA4335" />
+      <stop offset="100%" stop-color="#B81D1A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Interlocking 4-Color Knot Emblem -->
+  <g id="emblem">
+    <!-- Red ribbon (bottom-left) -->
+    <path d="M 25,265 L 25,160 L 68,160 L 68,222 L 130,222 L 130,265 Z" fill="url(#gradRed)" />
+    <path d="M 68,222 L 192,98 L 234,140 L 110,264 Z" fill="url(#gradRed)" filter="url(#ribbonGlow)" />
+
+    <!-- Green ribbon (bottom-right) -->
+    <path d="M 265,265 L 160,265 L 160,222 L 222,222 L 222,160 L 265,160 Z" fill="url(#gradGreen)" />
+    <path d="M 222,222 L 98,98 L 140,56 L 264,180 Z" fill="url(#gradGreen)" filter="url(#ribbonGlow)" />
+
+    <!-- Yellow ribbon (top-right) -->
+    <path d="M 265,25 L 265,130 L 222,130 L 222,68 L 160,68 L 160,25 Z" fill="url(#gradYellow)" />
+    <path d="M 222,68 L 98,192 L 56,150 L 180,26 Z" fill="url(#gradYellow)" filter="url(#ribbonGlow)" />
+
+    <!-- Blue ribbon (top-left) -->
+    <path d="M 25,25 L 130,25 L 130,68 L 68,68 L 68,130 L 25,130 Z" fill="url(#gradBlue)" />
+    <path d="M 68,68 L 192,192 L 150,234 L 26,110 Z" fill="url(#gradBlue)" filter="url(#ribbonGlow)" />
+  </g>
+</svg>
